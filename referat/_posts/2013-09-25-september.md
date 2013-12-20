@@ -1,0 +1,79 @@
+---
+layout: default
+title: 25. september 2013
+author: irene
+---
+
+
+* toc
+{:toc}
+
+Fremmøte
+--------
+
+### Tilstede
+
+-   Tom Ahmt
+-   1. trinn: Renate J Johannessen
+-   2. trinn: Irene Krydsby, Linda Bergsvik, Silje Espeland Sivertsen
+-   3. trinn: Ashild P Kråvik, Therese J Johannessen
+-   4. trinn: Tove Hanselmann
+-   5. trinn: Tonny Thers, Trine Mjøen, Bjørn Dalland, Victor Nystad
+-   6. trinn: Irene Mo Sætre, Linda Sunde, Svein Johnny Sjåstad
+-   7. trinn: ingen
+
+Saker
+-----
+
+### Hva er FAU - hva jobber vi med og hvordan
+
+Victor hadde en presentasjon av FAU hvor han gikk gjennom hvordan vi har
+jobbet de siste årene og hvilke hjelpemidler (programmer) vi har brukt.
+Presentasjonen med linker kan dere se her:
+<http://slides.florvagfau.no/faumote>
+
+Alt av arbeid som FAU har gjort skal være beskrevet på FAU sin wiki
+side: <http://florvagfau.no/wiki/Hovedside>
+
+Her kan dere se hvilke erfaringer de ulike arbeidsgruppene har gjort
+seg, lese møtereferat osv osv. Vil anbefale alle nye medlem å bruke
+siden aktivt. Det nye FAU må finne ut hvem som skal kunne redigere siden
+osv osv.
+
+### Gjennomgang av regnskap skoleåret 12/13
+
+Tove Hanselmann FAU sin avtroppende kasserer, gikk gjennom regnskapet
+for skoleåret 12/13.
+
+I all hovedsak har FAU sine inntekter (og utgifter) i forbindelse med
+elevkveldene. FAU får også 10% av inntektene til musikken og fotballen i
+forbindelse med 17 mai. Det er ellers kjøpt inn fruktkurv til lærerne
+til jul og div blomster/is i forbindelse med 17 mai ol.
+
+Overskudd: kr 10391.-.
+
+Saldo pr 28/8 2013: kr 32128,68
+
+### Valg
+
+For nye medlem av FAU samt hvem som har fått de ulike vervene se:
+<http://florvagfau.no/wiki/Medlemmer:2013-14>
+
+For arbeidsgruppene vil det muligens bli noe redigering frem til alle
+medlemmene til FAU er valgt fra alle trinnene.
+
+#### Verv
+
+Leder: Tonny Thers (5. trinn) Nestleder: Renate J Johannessen (1. trinn)
+Referent : rullerer Systemansvarlig: Jørn Tore Daltveit (6. trinn)- evt.
+tar leder dette selv? Kasserer: Therese J Johannessen (3. trinn) KFU
+Representant: rullerer (lager liste på det andre FAU møtet høsten 2013)
+NB! 1. KFU møte er alt onsdag 11/9
+
+### Eventuelt
+
+Det ble kort informert om frist 6/9 for å kommentere reguleringsplan for
+Florvåg skole. Planen ligger ute på kommunens nettside. Ingen hadde noen
+innspill som vil bli tatt videre til kommunen.
+
+Frist for innspill ang. skolerute for 2014/15 er 6/9: ingen innspill
