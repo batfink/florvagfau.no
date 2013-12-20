@@ -2,6 +2,10 @@
 layout: default
 title: 25. september 2013
 author: irene
+tags:
+- hva er FAU - hva jobber vi med og hvordan
+- gjennomgang av regnskap skoleåret 12/13
+- valg
 ---
 
 
