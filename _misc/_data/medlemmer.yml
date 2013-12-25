@@ -1,0 +1,80 @@
+person:
+    marlin: &marlin
+        name: Marthina Sophie Linton
+    renjoh: &renjoh
+        name: Renate J Johannessen
+    irekry: &irekry
+        name: Irene Krydsby
+    linber: &linber
+        name: Linda Bergsvik
+    elsber: &elsber
+        name: Elsebeth Nyten Bergh
+    silsiv: &silsiv
+        name: Silje Espeland Sivertsen
+    ashkra: &ashkra
+        name: Ashild P Kråvik
+    marbru: &marbru
+        name: Marianne Brudvik
+    thejoh: &thejoh
+        name: Therese J Johannessen
+    steeng: &steeng
+        name: Steffen Engelsen
+    tonthe: &tonthe
+        name: Tonny Thers
+    trimjo: &trimjo
+        name: Trine Mjøen
+    linsun: &linsun
+        name: Linda Sunde
+    mersja: &mersja
+        name: Merete Sjåstad
+    johli: &johli
+        name: Johnny Li
+    linjuh: &linjuh
+        name: Linda N. Juvik
+    vibrik: &vibrik
+        name: Vibeke Birkeland
+
+2013/14:
+    trinn:
+        1. trinn:
+            - *marlin
+            - *renjoh
+        2. trinn:
+            - *irekry
+            - *linber
+            - *elsber
+            - *silsiv
+        3. trinn:
+            - *ashkra
+            - *marbru
+            - *thejoh
+        4. trinn:
+            - *steeng
+        5. trinn:
+            - *tonthe
+            - *trimjo
+        6. trinn:
+            - *linsun
+            - *mersja
+        7. trinn:
+            - *johli
+            - *linjuh
+            - *vibrik
+    verv:
+        leder: *tonthe
+        nestleder: *renjoh
+        referent: Rullerer
+        systemansvarlig: –
+        kasserer: *thejoh
+        KFU: Rullerer
+
+    arbeidsgrupper:
+        - hjelpegruppen
+        - politisk
+        - tvaksjonen
+        - 17. mai 
+        - julefest
+        - elevkveld
+        - dugnad
+
+

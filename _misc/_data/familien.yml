@@ -1,0 +1,46 @@
+address: &address
+    street: Svartedalsvegen 13
+    phone: 56156162
+
+
+ungene:
+    ravn: &ravn
+        name: ravn
+
+    olve: &olve
+        name: olve
+
+    eik: &eik
+        name: eik
+
+
+ravn: 
+    << : *ravn
+    << : *address
+    siblings:
+        - *eik
+        - *olve
+
+olve: 
+    << : *olve
+    << : *address
+    siblings:
+        - *ravn
+        - *eik
+
+eik:
+    << : *eik
+    << : *address
+    siblings:
+        - *ravn
+        - *olve
+
+
+LOL: &LOL
+    Olve:
+        - Best
+        - Kulest
+        - Best i minecraft
+
+Han beste:
+    << : *LOL

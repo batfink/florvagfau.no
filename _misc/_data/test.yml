@@ -1,0 +1,17 @@
+person 1:
+  name: johnny
+  email: johnny@domain.com
+
+person 2:
+  name: helene
+  email: helene@domain.com
+
+person 3: &person3
+  name: ebert
+  email: ebert@domain.com
+
+person 4: *person3
+
+person 5:
+  << : *person3
+  anotheremail: blabla@domain.com

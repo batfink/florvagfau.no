@@ -7,3 +7,4 @@ relative_permalinks: false
 #permalink: pretty
 #permalink: /:categories/:year/:title/
 permalink: /:categories/:title/
+future: false

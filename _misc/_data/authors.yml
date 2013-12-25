@@ -1,4 +1,4 @@
-victor:
+victor: &victor
     name: Victor Nystad
     email: vnystad@gmail.com 
 

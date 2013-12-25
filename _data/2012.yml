@@ -1,0 +1,112 @@
+person:
+    irenek: &irenek
+        name: Irene Krydsby
+        trinn: 1
+    lindab: &lindab
+        name: Linda Bergsvik
+        trinn: 1
+    elsebeth: &elsebeth
+        name: Elsebeth Nyten Bergh
+        trinn: 1
+    silje: &silje
+        name: Silje Espeland Sivertsen
+        trinn: 1
+    liv: &liv
+        name: Liv Pettersen
+        trinn: 2
+    therese: &therese
+        name: Therese Johannesen
+        trinn: 2
+    tove: &tove
+        name: Tove Hanselmann
+        trinn: 3
+    helene: &helene
+        name: Helene Aure
+        trinn: 3
+    bjorn: &bjorn
+        name: Bjørn Dalland
+        trinn: 4
+    victor: &victor
+        name: Victor Nystad
+        trinn: 4
+    irene: &irene
+        name: Irene Mo Sætre
+        trinn: 5
+    reidun: &reidun
+        name: Reidun Tjønn Rinde
+        trinn: 5
+    johnny: &johnny
+        name: Johnny Li
+        trinn: 6
+    linda: &linda
+        name: Linda N. Juvik
+        trinn: 6
+    vibeke: &vibeke
+        name: Vibeke Birkeland
+        trinn: 6
+    ingvild: &ingvild
+        name: Ingvild Halland Ørnsrud
+        trinn: 7
+    may: &may
+        name: May Britt Varøy
+        trinn: 7
+    tom: &tom
+        name: Tom Ahmt        
+
+
+verv:
+    leder: *tom
+    nestleder: *liv
+    referent: Rullerer
+    systemansvarlig: *victor
+    kasserer: *tove
+    KFU:
+        - *tom
+        - *irene
+
+
+arbeidsgrupper:
+    hjelpegruppen:
+        - *victor
+        - *johnny
+        - *irene
+        - *silje
+    trafikk:
+        - *liv
+        - *therese
+        - *tove
+        - *helene 
+    tvaksjonen:
+        - 
+            << : *ingvild
+            gruppeleder: true
+        - *may
+        - *bjorn
+        - *victor
+    17mai:
+        - 
+            << : *bjorn
+            gruppeleder: true
+        - *victor
+        - *irene
+    julefest:
+        - *irenek
+        - *lindab
+        - *elsebeth
+        - *silje
+        - *irene
+        - *reidun
+    elevkveld:
+        - 
+            << : *tove
+            gruppeleder: true
+        - *helene
+        - *johnny
+        - *linda
+        - *vibeke
+    dugnad:
+        - *liv
+        - *therese
+
+
+
