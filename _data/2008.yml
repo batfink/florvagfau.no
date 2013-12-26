@@ -1,0 +1,89 @@
+person:
+    britt: &britt
+        name: Britt Throndsen
+        trinn: 1
+    victor: &victor
+        name: Victor Nystad
+        trinn: 1
+    hildegunn: &hildegunn
+        name: Hildegunn Gangsøy
+        trinn: 2
+    steinar: &steinar
+        name: Steinar Glenjen
+        trinn: 2
+    nyberg: &nyberg
+        name: Nina Nyberg
+        trinn: 3
+    namtvedt: &namtvedt
+        name: Nina Namtvedt
+        trinn: 3
+    harald: &harald
+        name: Harald Synnevåg
+        trinn: 4
+    solvor: &solvor
+        name: Solvor N. Vikøyr
+        trinn: 4
+    age: &age
+        name: Åge Torgilstveit
+        trinn: 5
+    therese: &therese
+        name: Therese Sandvik
+        trinn: 6
+    bas: &bas
+        name: Bas Vlam
+        trinn: 6
+    kristin: &kristin
+        name: Kristin Risvand Mo
+        trinn: 7
+    solfrid: &solfrid
+        name: Solfrid Grindheim
+        trinn: 7
+
+
+
+
+
+verv:
+    leder: 
+        - *victor
+    nestleder: 
+        - *hildegunn
+    referent: 
+        - *nyberg
+    nett: 
+        - *victor
+    kasserer: 
+        - *age
+    kfu:
+        - *kristin
+        - *therese
+
+
+arbeidsgrupper:    
+    trafikk:
+        - *hildegunn
+        - *steinar
+        - *nyberg
+        - *namtvedt
+    tvaksjonen:
+        - *harald
+        - *solvor
+        - *kristin
+        - *solfrid
+    17mai:
+        - *solvor
+        - *age
+    julefest:
+        - *britt
+        - *victor
+        - *age
+    elevkveld:
+        - *nyberg
+        - *namtvedt
+        - *therese
+        - *bas
+    dugnad:
+        - *hildegunn
+        - *steinar
+
+

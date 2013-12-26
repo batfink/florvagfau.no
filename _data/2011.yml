@@ -1,0 +1,101 @@
+person:
+    liv: &liv
+        name: Liv Pettersen
+        trinn: 1
+    solfrid: &solfrid
+        name: Solfrid Grindheim
+        trinn: 1
+    therese: &therese
+        name: Therese Kristoffersen
+        trinn: 2
+    tom: &tom
+        name: Tom Ahmt
+        trinn: 2
+    aina: &aina
+        name: Aina Bondehagen
+        trinn: 3
+    victor: &victor
+        name: Victor Nystad
+        trinn: 3
+    tove: &tove
+        name: Tove Hanselmann
+        trinn: 4
+    irene: &irene
+        name: Irene Mo Sætre
+        trinn: 4
+    dumben: &dumben
+        name: May Britt Dumben
+        trinn: 5
+    janicke: &janicke
+        name: Janicke Andersen
+        trinn: 5
+    eirik: &eirik
+        name: Eirik Jakobsen
+        trinn: 6
+    may: &may
+        name: May Britt Varøy
+        trinn: 6
+    graawe: &graawe
+        name: Therese Graawe
+        trinn: 7
+    bjorn: &bjorn
+        name: Bjørn Rasmussen
+        trinn: 7
+
+verv:
+    leder: 
+        - *janicke
+    nestleder: 
+        - *tom
+    referent: 
+        - name: Rullerer
+    system: 
+        - *victor
+    kasserer: 
+        - *tove
+    kfu:
+        - *dumben
+        - *therese        
+
+
+arbeidsgrupper:    
+    trafikk:
+        - *tom
+        - *therese
+        - *victor
+        - *aina
+    tvaksjonen:
+        - 
+            << : *irene
+            gruppeleder: true
+        - *tove
+        - *graawe
+        - name: Kåre Sletten
+    17mai:
+        - 
+            << : *victor
+            gruppeleder: true
+        - *irene
+        - *therese
+    julefest:
+        - 
+            << : *liv
+            gruppeleder: true
+        - *solfrid
+        - *may
+        - *janicke
+    elevkveld:
+        - 
+            << : *tove
+            gruppeleder: true
+        - *aina
+        - *may
+        - *janicke
+    dugnad:
+        - 
+            << : *tom
+            gruppeleder: true
+        - *eirik
+        - name: Frode Kristoffersen
+
+

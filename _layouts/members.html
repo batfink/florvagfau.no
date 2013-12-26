@@ -18,7 +18,7 @@
 
         {% assign key = verv[0] %}
         
-        <dt>{{ site.data.map[key] }}</dt>
+        <dt>{{ site.data.dictionary[key] }}</dt>
         {% for person in verv[1] %}
             <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
         {% endfor %}
@@ -31,7 +31,7 @@
     {% for gruppe in site.data[year]arbeidsgrupper %}
     <dl>
         {% assign key = gruppe[0] %}
-        <dt>{{ site.data.map[key] }}</dt>
+        <dt>{{ site.data.dictionary[key] }}</dt>
         {% for person in gruppe[1] %}
             <dd>{% if person.gruppeleder %}Gruppeleder: {% endif %}{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
         {% endfor %}

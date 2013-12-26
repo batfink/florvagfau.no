@@ -1,0 +1,90 @@
+person:
+    tom: &tom
+        name: Tom Ahmt
+        trinn: 1
+    therese: &therese
+        name: Therese Kristoffersen
+        trinn: 1
+    oystein: &oystein
+        name: Øystein Solheim
+        trinn: 2
+    marianne: &marianne
+        name: Marianne Tveiten Knutsen
+        trinn: 2
+    tove: &tove
+        name: Tove Hanselmann
+        trinn: 3
+    victor: &victor
+        name: Victor Nystad
+        trinn: 3
+    helen: &helen
+        name: Helen Berg
+        trinn: 4
+    janicke: &janicke
+        name: Janicke Andersen
+        trinn: 4
+    jannicke: &jannicke
+        name: Jannicke Saue Røyrvik
+        trinn: 5
+    kare: &kare
+        name: Kåre Sletten
+        trinn: 5
+    graawe: &graawe
+        name: Therese Graawe
+        trinn: 6
+    kristine: &kristine
+        name: Kristine Basteson
+        trinn: 6
+    linda: &linda
+        name: Linda Nilsen Juvik
+        trinn: 7
+    anne: &anne
+        name: Anne Tine Hiis Bergh
+        trinn: 7
+
+
+
+verv:
+    leder: 
+        - *janicke
+    nestleder: 
+        - *tom
+    referent: 
+        - *victor
+    nett: 
+        - *oystein
+    kasserer: 
+        - *kare
+    kfu:
+        - *kristine      
+
+
+arbeidsgrupper:    
+    trafikk:
+        - *oystein
+        - *marianne
+        - *tove
+        - *victor
+    tvaksjonen:
+        - *helen
+        - *janicke
+        - *linda
+        - *anne
+    17mai:
+        - *helen
+        - *janicke
+    julefest:
+        - *tom
+        - *therese
+        - *jannicke
+        - *kare
+    elevkveld:
+        - *tove
+        - *victor
+        - *graawe
+        - *kristine
+    dugnad:
+        - *oystein
+        - *marianne
+
+

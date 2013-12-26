@@ -97,7 +97,8 @@ verv:
 
 arbeidsgrupper:
     hjelpegruppen:
-        - name: Ingen hjelpegruppe
+        - name: Ingen hjelpegruppe dette skoleåret 
+          url: /referat/2013/oktober/#hjelpegruppe
     trafikk:
         - *irene
         - *lindab

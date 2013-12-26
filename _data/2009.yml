@@ -1,0 +1,22 @@
+person:
+    
+
+
+verv:
+    leder: *victor
+    nestleder: *janicke
+    referent: *ine
+    nett: *oystein
+    kasserer: *kare
+    kfu: *espen
+
+
+arbeidsgrupper:    
+    trafikk:
+    tvaksjonen:
+    17mai:
+    julefest:
+    elevkveld:
+    dugnad:
+
+
