@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: referat
 title: 25. september 2013
 author: irene
 tags:

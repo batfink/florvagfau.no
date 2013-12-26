@@ -2,6 +2,10 @@ body { margin: 50px; font-family: 'Helvetica Neue'; }
 h1, h2, h3 { font-weight: normal; }
 h1 { margin-top: 2em; }
 
+.backbtn {
+  color: maroon;
+}
+/*
 html,
 body {
   margin: 0;
@@ -112,3 +116,4 @@ header .button.hide,
 .with-styling #menu li:last-child {
   margin-bottom: 0;
 }
+*/

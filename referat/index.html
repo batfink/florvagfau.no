@@ -7,7 +7,7 @@ permalink: "/referat/"
     
   
 
-    {% for post in site.posts %}
+    {% for post in site.categories.referat %}
 
         {% assign year = post.date | date: '%Y' %}
         {% assign shortyear = post.date | date: '%y' %}

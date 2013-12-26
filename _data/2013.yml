@@ -80,18 +80,24 @@ trinn:
 
 
 verv:
-    leder: *tonny
-    nestleder: *renate
-    referent: Rullerer
-    systemansvarlig: –
-    kasserer: *therese
-    KFU: Rullerer
+    leder: 
+        - *tonny
+    nestleder: 
+        - *renate
+    referent: 
+        - name: Rullerer
+    system: 
+        - name: –
+    kasserer: 
+        - *therese
+    kfu: 
+        - name: Rullerer
 
 
 
 arbeidsgrupper:
     hjelpegruppen:
-        nedlagt
+        - name: Ingen hjelpegruppe
     trafikk:
         - *irene
         - *lindab
@@ -101,7 +107,9 @@ arbeidsgrupper:
         - *marianne
         - *therese
     tvaksjonen:
-        - *irene
+        - 
+            << : *irene
+            gruppeleder: true
         - *lindab
         - *elsebeth
         - *silje
@@ -109,6 +117,9 @@ arbeidsgrupper:
         - *steffen
         - *tonny
     julefest:
+        -
+            << : *marthina
+            gruppeleder: true
         - *johnny
         - *lindaj
         - *vibeke
@@ -122,6 +133,9 @@ arbeidsgrupper:
         - *lindas
         - *merete
     dugnad:
+        -
+            << : *marthina
+            gruppeleder: true
         - *irene
         - *lindab
         - *elsebeth

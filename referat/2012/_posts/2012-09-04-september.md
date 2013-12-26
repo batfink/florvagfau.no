@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: referat
 title: 4. september 2012
 author: liv
 ---

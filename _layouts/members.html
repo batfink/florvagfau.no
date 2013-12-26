@@ -1,15 +1,49 @@
-<!DOCTYPE HTML>
-<html lang="no">
-    <head>
-        <meta charset="UTF-8">
-        <title>{{ page.title }}</title>
-    </head>
-    
-    <body>
+{% include header.html backbtn="medlemmer" %}
+
+{% assign year = page.date | date: '%Y' | minus: 0 %}
+{% assign month = page.date | date: '%-m' | minus: 0 %}
+
+{% if month < 8 %}
+    {% assign year = year | minus: 1 %}    
+{% endif %}
+
+{% assign year = year | downcase %}
+
+
+<h1>{{ page.title }}</h1>
+
+
+<dl>
+    {% for verv in site.data[year]verv %}
+
+        {% assign key = verv[0] %}
         
-        <h1>members</h1>
+        <dt>{{ site.data.map[key] }}</dt>
+        {% for person in verv[1] %}
+            <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+        {% endfor %}
+    {% endfor %}  
+</dl>
 
-        {{ content }}
 
-    </body>
-</html>
+<section>
+    <h1>Arbeidsgrupper</h1>  
+    {% for gruppe in site.data[year]arbeidsgrupper %}
+    <dl>
+        {% assign key = gruppe[0] %}
+        <dt>{{ site.data.map[key] }}</dt>
+        {% for person in gruppe[1] %}
+            <dd>{% if person.gruppeleder %}Gruppeleder: {% endif %}{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+        {% endfor %}
+    </dl>
+        
+
+    {% endfor %}  
+</section>
+
+
+
+
+
+
+{% include footer.html %}

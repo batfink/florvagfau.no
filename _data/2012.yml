@@ -55,12 +55,17 @@ person:
 
 
 verv:
-    leder: *tom
-    nestleder: *liv
-    referent: Rullerer
-    systemansvarlig: *victor
-    kasserer: *tove
-    KFU:
+    leder: 
+        - *tom
+    nestleder: 
+        - *liv
+    referent: 
+        - name: Rullerer
+    system: 
+        - *victor
+    kasserer: 
+        - *tove
+    kfu:
         - *tom
         - *irene
 
