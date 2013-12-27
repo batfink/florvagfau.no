@@ -36,8 +36,14 @@
         
     {% endfor %}
 
-    <a href="{{ post.url }}">Les referatet</a>
-    <a href="/referat/">Eldre referat</a>
+    <ul>
+        <li>
+            <a href="{{ post.url }}">Les referatet</a>
+        </li>
+        <li>
+            <a href="/referat/">Eldre referat</a>
+        </li>
+    </ul>
 
     </section>  
     
@@ -69,10 +75,14 @@
  
         </dl>
 
-        <a href="/medlemmer/{{ year | append: '-' | append: nextyear }}/">Alle medlemmer</a>
-
-        <a href="/medlemmer/">Medlemmer tidligere år</a>
-
+        <ul>
+            <li>
+                <a href="/medlemmer/{{ year | append: '-' | append: nextyear }}/">Alle medlemmer</a>
+            </li>
+            <li>
+                <a href="/medlemmer/">Medlemmer tidligere år</a>
+            </li>
+        </ul>
     </section>  
 
     <section>
@@ -85,9 +95,11 @@
     </section>
 
     <footer>
-        Florvagfau.no er drevet av Victor Nystad, bygget med <a href="http://jekyllrb.com">Jekyll</a> og hostet med <a href="http://pages.github.com">Github Pages</a>. 
+        Florvagfau.no er drevet av Victor&nbsp;Nystad, bygget med <a href="http://jekyllrb.com">Jekyll</a> og hostet med <a href="http://pages.github.com">Github Pages</a>. 
 
-        <a href="/om/">Les mer om websidene</a>
+        <p>
+            <a href="/om/">Les mer om websidene</a>
+        </p>
     </footer>
 
 {% include footer.html %}
