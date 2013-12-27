@@ -6,3 +6,37 @@ body {
 }
 
 h1, h2, h3 { font-weight: normal; }
+
+dl.tags {
+    clear: both;
+    overflow: hidden;
+    dt {
+        float: left;        
+        &:after {
+            content: ':\2002'
+        }
+    }
+    dd {
+        float: left;
+        margin: 0;
+        padding: 0;
+        &:after {
+            content: '\2022\2002'
+        }
+        &:last-child:after {
+            content: ''
+        }
+    }
+}
+
+dl:not(.tags) {
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin-left: 0;
+        & + dt {
+            margin-top: 1em;    
+        }
+    }
+}

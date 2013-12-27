@@ -1,22 +1,61 @@
 person:
-    
+    oystein: &oystein
+        name: Øystein Solheim
+        trinn: 1
+    espen: &espen
+        name: Espen Berentsen
+        trinn: 1        
+    victor: &victor
+        name: Victor Nystad
+        trinn: 2
+    janicke: &janicke
+        name: Janicke Andersen
+        trinn: 3
+    kare: &kare
+        name: Kåre Sletten
+        trinn: 4
+    therese: &therese
+        name: Therese Kristoffersen
+        trinn: 5
+    ine: &ine
+        name: Ine Sture
+        trinn: 6
+    sandvik: &sandvik
+        name: Therese Sandvik
+        trinn: 7
 
 
 verv:
-    leder: *victor
-    nestleder: *janicke
-    referent: *ine
-    nett: *oystein
-    kasserer: *kare
-    kfu: *espen
+    leder: 
+        - *victor
+    nestleder: 
+        - *janicke
+    referent: 
+        - *ine
+    nett: 
+        - *oystein
+    kasserer: 
+        - *kare
+    kfu: 
+        - *espen
 
 
 arbeidsgrupper:    
     trafikk:
+        - *victor
+        - *janicke
     tvaksjonen:
+        - *kare
+        - *sandvik
     17mai:
+        - *kare
     julefest:
+        - *oystein
+        - *espen
     elevkveld:
+        - *janicke
+        - *ine
     dugnad:
+        - *victor
 
 

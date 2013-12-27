@@ -3,9 +3,9 @@ title: TV-Aksjonen
 layout: default
 ---
 
-TV Aksjonen arrangeres som oftest nest siste helgen i oktober hvert år, og koordineres på Askøy av [[Askøy Frivillighetssentral]].
+TV Aksjonen arrangeres som oftest nest siste helgen i oktober hvert år, og koordineres på Askøy av Askøy Frivillighetssentral.
 
-TV Aksjonsgruppen i FAU begynner arbeidet sitt i [[Kalender#TV_Aksjon|slutten av september]].
+TV Aksjonsgruppen i FAU begynner arbeidet sitt i slutten av september.
 
 ## Rode-leder møte
 

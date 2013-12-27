@@ -90,47 +90,35 @@ I den grad FAU på vegne av foreldrene disponerer økonomiske midler skal disse 
 
 Se [arbeidsgrupper](/arbeidsgrupper/) for mer utfyllende informasjon.
 
-<dl>
-    <dt>Politisk og trafikkutvalg</dt>
+Politisk og trafikkutvalg
+: Arbeider for sikker skolevei og skolepolitiske saker/utbygging opp mot relevante organer
+: 2\. og 3. trinn
+: Hele året
 
-    <dd>Arbeider for sikker skolevei og skolepolitiske saker/utbygging opp mot relevante organer</dd>
-    <dd>2. og 3. trinn</dd>
-    <dd>Hele året</dd>
+TV-aksjon
+: Ansvarlig for innsamling i Florvåg
+: 4\. og 7. trinn
+: Oktober hvert år
 
+17\. mai
+: Samarbeid mellom FAU, Askøy Fotballklubb og Askøy Skolebrass.
+: 4\. trinn
+: Arbeidet bør starte i januar
 
-    <dt>TV-aksjon</dt>
+Julefest
+: Gjennomføres i samarbeid med skolen
+: 1\. og 5. trinn
+: Arbeidet bør starte i oktober
 
-    <dd>Ansvarlig for innsamling i Florvåg</dd>
-    <dd>4. og 7. trinn</dd>
-    <dd>Oktober hvert år</dd>
+Elevkvelder
+: 3\. og 6. trinn
+: oktober, november, februar, april
 
+Nærmiljøanlegg/dugnad
+: Ansvarlig for søknader til kommunen + organisering av dugnad
+: 2\. trinn
+: Hver vår og ellers ved behov
 
-    <dt>17. mai</dt>
-
-    <dd>Samarbeid mellom FAU, Askøy Fotballklubb og Askøy Skolebrass.</dd>
-    <dd>4. trinn</dd>
-    <dd>Arbeidet bør starte i januar</dd>
-
-
-    <dt>Julefest</dt>
-
-    <dd>Gjennomføres i samarbeid med skolen</dd>
-    <dd>1. og 5. trinn</dd>
-    <dd>Desember.</dd>
-    <dd>Arbeidet bør starte i oktober</dd>
-
-    <dt>Elevkvelder</dt>
-
-    <dd>3. og 6. trinn</dd>
-    <dd>oktober, november, februar, april</dd>
-
-    <dt>Nærmiljøanlegg/dugnad</dt>
-
-    <dd>Ansvarlig for søknader til kommunen + organisering av dugnad</dd>
-    <dd>2. trinn</dd>
-    <dd>Hver vår og ellers ved behov</dd>
-
-</dl>
 
 Gruppene består av foreldrekontaktene på hvert trinn, evt. gruppe, samt andre foreldre som vil/kan delta. Gruppen velger selv hvem som skal være gruppeleder.
 
