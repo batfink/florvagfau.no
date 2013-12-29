@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="no" id="showmenu">
+<html lang="no" id="meny">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, user-scalable=yes, initial-scale = 1.0, minimum-scale = 1.0"/>
@@ -11,21 +11,26 @@
     
 <div id="wrapper">
     <header>
-        <h1 class="logo">Florvag Skole FAU</h1>    
+        <div class="content">
+            <h1 class="logo">Florvag Skole FAU</h1>    
+            
+            
+            
+            {% if include.backbtn %}
+                <!-- <a class="backbtn" href="/{% unless include.backbtn == 'referat'%}{{ include.backbtn }}/{% endunless %}">{{ include.backbtn }}</a>   -->  
+            {% endif %}
+            
+            <!--         <a class="button show" href="#showmenu">Meny</a>
+            <a class="button hide" href="#">Lukk</a>
+             -->
+            <a href="#meny">Meny</a>
+            <a href="#">Skjul meny</a>
+        </div>
 
-        
-
-        {% if include.backbtn %}
-            <!-- <a class="backbtn" href="/{% unless include.backbtn == 'referat'%}{{ include.backbtn }}/{% endunless %}">{{ include.backbtn }}</a>   -->  
-        {% endif %}
-        
-<!--         <a class="button show" href="#showmenu">Meny</a>
-        <a class="button hide" href="#">Lukk</a>
- -->
     </header>
 
-    <div id="menu">
-        <ul>
+    <nav id="nav">
+        <ul class="content">
             <li><a href="/">Hjem</a></li>
             <li><a href="/referat/">Referat</a></li>            
             <li><a href="/medlemmer/">Medlemmer</a></li>
@@ -34,7 +39,8 @@
             <li><a href="/kommunikasjon/">Kommunikasjon</a></li>
             <li><a href="/vedtekter/">Vedtekter</a></li>
         </ul>
-    </div>
+    </nav>
+    
 
     <div id="content">
         

@@ -1,21 +1,67 @@
 {% include header.html backbtn="referat" %}
 
+<div class="content">
+    <h1>{{ page.title }}</h1>
+    
+    
+    {{ content }}
+    
+    
+    {% assign year = page.date | date: '%Y' | minus: 0 %}
+    {% assign month = page.date | date: '%-m' | minus: 0 %}
+    
+    {% if month < 8 %}
+        {% assign year = year | minus: 1 %}    
+    {% endif %}
+    
+    {% assign year = year | downcase %}
+    
+    <p>Referent: {{ site.data[year]person[page.author]name }}</p>
+    
+    
+    
+    {% assign posts = '' %}
+    
+    {% for post in site.categories.referat %}
+     
+    
+        {% assign p = post.title | append: '|' | append: url | split: '|' %}
+    
+        {% assign posts = posts | append: p | append: '|'  %}
+    
+    
+    
+    
+    {% endfor %}
+    
+    
+    {% assign posts = posts | split: '|' %}
+    
+    {% assign referat_titles = site.categories.referat | map: 'title' %}
+    {% assign referat_urls = site.categories.referat | map: 'url' %}
+    
+    
+    <script>
+        //console.log('map', {{ referat_titles | jsonify }}, {{ referat_urls | jsonify }});
+    </script>
+    
+    <script>
+        console.log('dates', {{ site.categories.referat | map: 'date' | jsonify }})
+    </script>
+    
+    <script>
+        //console.log('post by id', {{ page['/referat/2013/oktober'] | jsonify }})
+    </script>
+    
+    
+    {% if page.next %}
+        <!-- <a href="{{ page.previous.url }}">{{ page.next.date | date: '%d.%m-%Y' | prepend: '< ' }}</a> -->
+    {% endif %}
+    
+    {% if page.previous %}
+        <!-- <a href="{{ page.previous.url }}">{{ page.previous.date | date: '%d.%m.%Y' | append: ' >' }}</a> -->
+    {% endif %}
+    </div>
 
-<h1>{{ page.title }}</h1>
-
-
-{{ content }}
-
-
-{% assign year = page.date | date: '%Y' | minus: 0 %}
-{% assign month = page.date | date: '%-m' | minus: 0 %}
-
-{% if month < 8 %}
-    {% assign year = year | minus: 1 %}    
-{% endif %}
-
-{% assign year = year | downcase %}
-
-<p>Referent: {{ site.data[year]person[page.author]name }}</p>
 
 {% include footer.html %}

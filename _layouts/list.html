@@ -1,20 +1,21 @@
 {% include header.html %}
 
-<h1>{{ page.title }}</h1>
-
-<ul>
-
-    {% assign category = page.title | downcase %}
+<div class="content">
+    <h1>{{ page.title }}</h1>
     
-    {% for post in site.categories[category] %}
-
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-
-    {% endfor %}
-
-</ul>
-
+    <ul>
     
+        {% assign category = page.title | downcase %}
+        
+        {% for post in site.categories[category] %}
+    
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+    
+        {% endfor %}
+    
+    </ul>
+    
+</div>
 {% include footer.html %}

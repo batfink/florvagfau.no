@@ -1,12 +1,15 @@
 person:
     marthina: &marthina
         name: Marthina Sophie Linton
+        phone: 400 49 471
         trinn: 1
     renate: &renate
         name: Renate J Johannessen
+        phone: 977 45 801
         trinn: 1
     irene: &irene
         name: Irene Krydsby
+        phone: 415 21 573
         trinn: 2
     lindab: &lindab
         name: Linda Bergsvik
@@ -19,6 +22,7 @@ person:
         trinn: 2
     ashild: &ashild
         name: Åshild P Kråvik
+        phone: 408 40 458
         trinn: 3
     marianne: &marianne
         name: Marianne Brudvik
@@ -31,6 +35,7 @@ person:
         trinn: 4
     tonny: &tonny
         name: Tonny Thers
+        phone: 915 61 838
         trinn: 5
     trine: &trine
         name: Trine Mjøen

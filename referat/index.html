@@ -4,60 +4,61 @@ title: Referat
 
 {% include header.html %}
     
-  
-
-    {% for post in site.categories.referat %}
-
-        {% assign year = post.date | date: '%Y' %}
-        {% assign shortyear = post.date | date: '%y' %}
-        
-
-        {% assign month = post.date | date: '%-m' %}
-        {% assign previousmonth = post.next.date | date: '%-m' %}
-
-
-        {% assign i = month | minus: 1 %}
-        {% assign j = previousmonth | minus: 1 %}
-
-        {% assign schoolyearmonth = site.data.date.schoolyear[i] %}
-        {% assign schoolyearpreviousmonth = site.data.date.schoolyear[j] %}
-        
-        {% unless post.next %}
-            {% assign schoolyearpreviousmonth = 0 %}    
-        {% endunless %}
-        
-        {% if forloop.first and schoolyearmonth < 6 %}
-            {% assign year = year | plus: 1 %}
-            {% assign shortyear = shortyear | plus: 1 %}   
-        {% endif %}
-
-        {% if schoolyearmonth > schoolyearpreviousmonth %}
-            <h1>Skoleåret {{ year | minus: 1}}/{{ shortyear }}</h1>            
-        {% endif %}
-        
-
-        <article>
-            
-            <h1><a href="{{ post.url }}">Referat FAU-møte
-
-                {% assign daynum = post.date | date:"%w" | plus: 0 %}
-                {{ site.data.date.days[daynum] }}
-
-                {{ post.date | date:"%-d." }}
-
-                {% assign monthnum = post.date | date:"%-m" | minus: 1 %}
-                {{ site.data.date.months[monthnum] }}
-
-                {{ post.date | date:"%Y" }}
-
-            </a></h1>
-            <dl class="tags">
-                <dt>Saker</dt>
-                {% for tag in post.tags %}
-                    <dd>{{ tag | markdownify | strip_html }}</dd>
-                {% endfor %}
-            </dl>
-        </article>
-    {% endfor %}
+ <div class="content"> 
+     
+         {% for post in site.categories.referat %}
+     
+             {% assign year = post.date | date: '%Y' %}
+             {% assign shortyear = post.date | date: '%y' %}
+             
+     
+             {% assign month = post.date | date: '%-m' %}
+             {% assign previousmonth = post.next.date | date: '%-m' %}
+     
+     
+             {% assign i = month | minus: 1 %}
+             {% assign j = previousmonth | minus: 1 %}
+     
+             {% assign schoolyearmonth = site.data.date.schoolyear[i] %}
+             {% assign schoolyearpreviousmonth = site.data.date.schoolyear[j] %}
+             
+             {% unless post.next %}
+                 {% assign schoolyearpreviousmonth = 0 %}    
+             {% endunless %}
+             
+             {% if forloop.first and schoolyearmonth < 6 %}
+                 {% assign year = year | plus: 1 %}
+                 {% assign shortyear = shortyear | plus: 1 %}   
+             {% endif %}
+     
+             {% if schoolyearmonth > schoolyearpreviousmonth %}
+                 <h1>Skoleåret {{ year | minus: 1}}/{{ shortyear }}</h1>            
+             {% endif %}
+             
+     
+             <article>
+                 
+                 <h1><a href="{{ post.url }}">Referat FAU-møte
+     
+                     {% assign daynum = post.date | date:"%w" | plus: 0 %}
+                     {{ site.data.date.days[daynum] }}
+     
+                     {{ post.date | date:"%-d." }}
+     
+                     {% assign monthnum = post.date | date:"%-m" | minus: 1 %}
+                     {{ site.data.date.months[monthnum] }}
+     
+                     {{ post.date | date:"%Y" }}
+     
+                 </a></h1>
+                 <dl class="tags">
+                     <dt>Saker</dt>
+                     {% for tag in post.tags %}
+                         <dd>{{ tag | markdownify | strip_html }}</dd>
+                     {% endfor %}
+                 </dl>
+             </article>
+         {% endfor %}
+     </div>
    
 {% include footer.html %}

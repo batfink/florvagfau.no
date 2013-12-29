@@ -4,8 +4,13 @@ body {
     padding: 0;
 }
 
-section {
-    padding: 20px;
+header {
+
+}
+
+
+
+section {    
     &:nth-child(odd) {
         background: #ddd;
     }
@@ -50,3 +55,73 @@ dl:not(.tags) {
         }
     }
 }
+
+
+// #wrapper {
+//     max-width: 980px;
+//     margin: 0 auto;
+//     #nav {
+//         li {
+//             margin: 0;
+//         }
+//     }
+//     #content {
+//         width: 66%;
+//         float: right;
+//     }
+//     footer {
+//         clear: both;
+//     }
+// }
+
+
+#meny {
+    &:target {
+        #nav {
+            display: block;
+        }
+    }
+}
+
+#nav {
+    display: none;
+}
+
+// header a { display: none; }
+
+
+.content {
+    padding: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    header a { display: none; }
+    #nav {
+        display: block;
+    }
+    .content {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    #nav {
+        background: silver;
+        clear: both;
+        overflow: hidden;
+        ul {
+            list-style-type: none;            
+            padding: 0;
+
+        }
+        li {
+            float: left;
+            display: inline-block;
+            a {
+                display: inline-block;
+                padding: 10px
+            }
+        }
+    }
+}
+
+
+
