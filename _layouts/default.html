@@ -1,8 +1,26 @@
 {% include header.html %}
 
 <div class="content">
-    <h1>{{ page.title }}</h1>
+    <h1>Arrangement</h1>
+
     
+    
+    {% if page.categories[0] == 'arrangement' %}
+        <select>
+            {% for post in site.categories.arrangement %}
+            <option value="{{ post.url }}"{% if post.url == page.url%} selected="selected"{% endif %}>{{ post.title }}</option>
+            {% endfor %}
+        </select>
+        
+        <script>
+            (function(el) {
+                el.addEventListener('change', function() {
+                    window.location.href = el.options[el.selectedIndex].value;                
+                });                
+            })(document.getElementsByTagName('select')[0]);
+        </script>
+    {% endif %}
+
     {{ content }}
 </div>
 

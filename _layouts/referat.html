@@ -1,7 +1,54 @@
 {% include header.html backbtn="referat" %}
 
 <div class="content">
-    <h1>{{ page.title }}</h1>
+    
+
+    <h1>Møtereferat</h1>
+    <select>
+
+        {% for post in site.categories.referat %}
+    
+            {% assign year = post.date | date: '%Y' %}
+            {% assign shortyear = post.date | date: '%y' %}
+             
+     
+            {% assign month = post.date | date: '%-m' %}
+            {% assign previousmonth = post.next.date | date: '%-m' %}
+     
+     
+            {% assign i = month | minus: 1 %}
+            {% assign j = previousmonth | minus: 1 %}
+     
+            {% assign schoolyearmonth = site.data.date.schoolyear[i] %}
+            {% assign schoolyearpreviousmonth = site.data.date.schoolyear[j] %}
+            
+            {% unless post.next %}
+                {% assign schoolyearpreviousmonth = 0 %}    
+            {% endunless %}
+            
+            {% if forloop.first and schoolyearmonth < 6 %}
+                {% assign year = year | plus: 1 %}
+                {% assign shortyear = shortyear | plus: 1 %}   
+            {% endif %}
+     
+            {% if schoolyearmonth > schoolyearpreviousmonth %}
+                <optgroup label="Skoleåret {{ year | minus: 1}}/{{ shortyear }}">                
+            {% endif %}
+
+            <option value="{{ post.url }}"{% if post.url == page.url%} selected="selected"{% endif %}>{{ post.title }}</option>
+        {% endfor %}
+        </optgroup>
+
+
+    </select>
+    
+    <script>
+        (function(el) {
+            el.addEventListener('change', function() {
+                window.location.href = el.options[el.selectedIndex].value;                
+            });                
+        })(document.getElementsByTagName('select')[0]);
+    </script>
     
     
     {{ content }}
