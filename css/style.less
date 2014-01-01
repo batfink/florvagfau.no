@@ -79,10 +79,29 @@ dl:not(.tags) {
 // }
 
 
+.buttons a {            
+    &:first-child {
+        display: block;
+    }
+    &:last-child {
+        display: none;
+    }
+}
+
+
+
 #meny {
     &:target {
         #nav {
             display: block;
+        }
+        .buttons a {            
+            &:first-child {
+                display: none;
+            }
+            &:last-child {
+                display: block;
+            }
         }
     }
 }

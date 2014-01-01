@@ -2,6 +2,14 @@
 layout: referat
 title: 4. september 2012
 author: liv
+tags:
+    - lekeapparater
+    - fau møtetider
+    - foreldreoppgaveskjema
+    - sfo åpningstider
+    - mailinglisten
+    - mobbing
+    - snop på skolen
 ---
 
 

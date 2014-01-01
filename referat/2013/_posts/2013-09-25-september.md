@@ -3,9 +3,9 @@ layout: referat
 title: 25. september 2013
 author: irene
 tags:
-- hva er FAU - hva jobber vi med og hvordan
-- gjennomgang av regnskap skoleåret 12/13
-- valg
+    - fau arbeidsmetoder
+    - regnskap skoleåret 2012/13
+    - valg
 ---
 
 
@@ -17,14 +17,37 @@ Fremmøte
 
 ### Tilstede
 
--   Tom Ahmt
--   1. trinn: Renate J Johannessen
--   2. trinn: Irene Krydsby, Linda Bergsvik, Silje Espeland Sivertsen
--   3. trinn: Ashild P Kråvik, Therese J Johannessen
--   4. trinn: Tove Hanselmann
--   5. trinn: Tonny Thers, Trine Mjøen, Bjørn Dalland, Victor Nystad
--   6. trinn: Irene Mo Sætre, Linda Sunde, Svein Johnny Sjåstad
--   7. trinn: ingen
+FAU
+: Tom Ahmt
+
+1\. trinn
+: Renate J Johannessen
+
+2\. trinn
+: Irene Krydsby
+: Linda Bergsvik
+: Silje Espeland Sivertsen
+
+3\. trinn
+: Ashild P Kråvik
+: Therese J Johannessen
+
+4\. trinn
+: Tove Hanselmann
+
+5\. trinn
+: Tonny Thers
+: Trine Mjøen
+: Bjørn Dalland
+: Victor Nystad
+
+6\. trinn
+: Irene Mo Sætre
+: Linda Sunde
+: Svein Johnny Sjåstad
+
+7\. trinn
+: Ingen
 
 Saker
 -----
@@ -68,11 +91,25 @@ medlemmene til FAU er valgt fra alle trinnene.
 
 #### Verv
 
-Leder: Tonny Thers (5. trinn) Nestleder: Renate J Johannessen (1. trinn)
-Referent : rullerer Systemansvarlig: Jørn Tore Daltveit (6. trinn)- evt.
-tar leder dette selv? Kasserer: Therese J Johannessen (3. trinn) KFU
-Representant: rullerer (lager liste på det andre FAU møtet høsten 2013)
-NB! 1. KFU møte er alt onsdag 11/9
+Leder
+: Tonny Thers (5. trinn) 
+
+Nestleder
+: Renate J Johannessen (1. trinn)
+
+Referent
+: rullerer 
+
+Systemansvarlig
+: Jørn Tore Daltveit (6. trinn)- evt. tar leder dette selv? 
+
+Kasserer
+: Therese J Johannessen (3. trinn) KFU
+
+KFU-representant
+: rullerer (lager liste på det andre FAU møtet høsten 2013)
+
+*NB! 1. KFU møte er alt onsdag 11/9*
 
 ### Eventuelt
 
