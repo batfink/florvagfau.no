@@ -9,12 +9,10 @@
 
 {% if month < 8 %}
     {% assign year = year | minus: 1 %} 
-    {% assign nextyear = shortyear | minus: 1 %}    
+    {% assign nextyear = nextyear | minus: 1 %}    
 {% endif %}
 
-
 {% assign year = year | downcase %}
-
 
 
 
