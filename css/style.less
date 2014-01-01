@@ -6,6 +6,11 @@ body {
 
 header {
     background: gray;
+    color: white;
+    font-size: 14px;
+    h1 {
+        margin: 0;
+    }
 }
 
 
@@ -79,15 +84,29 @@ dl:not(.tags) {
 // }
 
 
-.buttons a {            
-    &:first-child {
-        display: block;
-    }
-    &:last-child {
-        display: none;
-    }
-}
+.buttons {
 
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    a {            
+        color: white;
+        width: 2em;
+        height: 2em;        
+        background-image: -webkit-repeating-linear-gradient(white, white 20%, transparent 20%, transparent 40%);
+        background-image: repeating-linear-gradient(white, white 20%, transparent 20%, transparent 40%);
+        text-indent: -1000px;        
+
+        &:first-child {
+            display: block;
+        }
+        &:last-child {
+            display: none;
+        }
+    }
+
+}
 
 
 #meny {
@@ -95,7 +114,7 @@ dl:not(.tags) {
         #nav {
             display: block;
         }
-        .buttons a {            
+        .buttons a {  
             &:first-child {
                 display: none;
             }
