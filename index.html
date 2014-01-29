@@ -50,36 +50,43 @@
     <section>
         <div class="content members">
             <h1>Kontaktpersoner skoleåret {{ year | append: '-' | append: nextyear}}</h1>
-            <dl>
+            <div class="list-wrapper">
                 
-                {% for verv in site.data[year]verv | limit: 2 %}
-                    {% assign key = verv[0] %}
-            
-                    {% for person in verv[1] %}
-                        
-                        <dt>{{ site.data.dictionary[key] }}</dt>
-                        <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
-                        {% if person.phone %}<dd>Tlf. {{ person.phone }}</dd>{% endif %}
-                        
+                
+                    {% for verv in site.data[year]verv | limit: 2 %}
+                        {% assign key = verv[0] %}
+                        <dl>    
+                        {% for person in verv[1] %}
+                            
+                            <dt>{{ site.data.dictionary[key] }}</dt>
+                            <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+                            {% if person.phone %}<dd>Tlf. {{ person.phone }}</dd>{% endif %}
+                            
+                        {% endfor %}
+                         </dl>
                     {% endfor %}
-            
-                {% endfor %}
-            
-            
-                {% for gruppe in site.data[year]arbeidsgrupper %}
-                    {% assign key = gruppe[0] %}
-            
-                    {% for person in gruppe[1] %}
-                        {% if person.gruppeleder %}
-                        <dt>Gruppeleder {{ site.data.dictionary[key] }}</dt>
-                        <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
-                        {% if person.phone %}<dd>Tlf. {{ person.phone }}</dd>{% endif %}
-                        {% endif %}
-                    {% endfor %}
-            
-                {% endfor %}            
-             
-            </dl>
+               
+
+                
+                    {% for gruppe in site.data[year]arbeidsgrupper %}
+                        
+                        {% assign key = gruppe[0] %}
+                
+                        {% for person in gruppe[1] %}
+                            {% if person.gruppeleder %}
+                            <dl>
+                            <dt>Gruppeleder {{ site.data.dictionary[key] }}</dt>
+                            <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+                            {% if person.phone %}<dd>Tlf. {{ person.phone }}</dd>{% endif %}
+                            </dl> 
+                            {% endif %}
+
+                        {% endfor %}
+                         
+                    {% endfor %}            
+               
+                
+            </div>
             
             <ul>
                 <li>
@@ -95,7 +102,7 @@
     <section>
         <div class="content">
             <h1>Kokebøker</h1>
-            <ul>
+            <ul class="recipiesButtons">
             {% for post in site.categories.arrangement %}
             <li><a class="button" href="{{ post.url }}">{{ post.title }}</a></li>    
             {% endfor %}

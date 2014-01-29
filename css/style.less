@@ -41,8 +41,8 @@ a.button {
     padding: .5rem 1rem;
     color: white;
     border-radius: 3px;
-    margin-top: .5rem;
-    font-weight: bold;
+    margin-bottom: .5rem;
+    font-weight: bold;    
 }
 
 section {    
@@ -84,6 +84,9 @@ dl.tags {
 }
 
 dl:not(.tags) {
+    margin-top: 0;
+    -webkit-column-break-inside: avoid;
+    column-break-inside: avoid;    
     dt {
         font-weight: bold;
     }
@@ -95,6 +98,9 @@ dl:not(.tags) {
     }
 }
 
+.gruppeleder {
+    font-style: italic;
+}
 
 // #wrapper {
 //     max-width: 980px;
@@ -215,6 +221,14 @@ select {
 
 @media only screen and (min-width: 1024px) {
     .buttons { display: none; }
+    .recipiesButtons, .list-wrapper {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;        
+        column-gap: 20px;
+    }
     #nav {
         display: block;
     }
@@ -229,7 +243,6 @@ select {
         ul {
             list-style-type: none;            
             padding: 0;
-
         }
         li {
             float: left;
@@ -240,18 +253,11 @@ select {
             }
         }
     }
-    dl:not(.tags) {
-        -moz-column-count: 3;
-       -moz-column-gap: 20px;
-       -webkit-column-count: 3;
-       -webkit-column-gap: 20px;
-        column-count: 3;
-        column-gap: 20px;
-    }
+        
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    dl:not(.tags) {
+    .recipiesButtons, .list-wrapper {
         -moz-column-count: 2;
        -moz-column-gap: 20px;
        -webkit-column-count: 2;

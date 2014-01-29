@@ -26,34 +26,75 @@
     </script>
     
     
-    <dl>
-        {% for verv in site.data[year]verv %}
     
-            {% assign key = verv[0] %}
+<!--         <div class="list-wrapper">
+            {% for verv in site.data[year]verv %}
+            <dl>    
+                {% assign key = verv[0] %}
+                
+                <dt>{{ site.data.dictionary[key] }}</dt>
+                {% for person in verv[1] %}
+                    <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+                {% endfor %}
+            </dl>    
+            {% endfor %} 
+        </div> -->
+    <div class="list-wrapper">
+    {% for verv in site.data[year]verv %}
+        {% assign key = verv[0] %}
+        <dl>
+            <dt>{{ site.data.dictionary[key] }}</dt>    
+        {% for person in verv[1] %}
             
-            <dt>{{ site.data.dictionary[key] }}</dt>
-            {% for person in verv[1] %}
-                <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
-            {% endfor %}
-        {% endfor %}  
-    </dl>
-    
+            
+            <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+            
+            
+        {% endfor %}
+         </dl>
+    {% endfor %}
+
+
+
+    {% for gruppe in site.data[year]arbeidsgrupper %}
+        
+        {% assign key = gruppe[0] %}
+
+        {% for person in gruppe[1] %}
+            {% if person.gruppeleder %}
+            <dl>
+            <dt>Gruppeleder {{ site.data.dictionary[key] }}</dt>
+            <dd>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+            
+            </dl> 
+            {% endif %}
+
+        {% endfor %}
+         
+    {% endfor %}            
+    </div>
     
     <section>
         <h1>Arbeidsgrupper</h1>  
-        <dl>
-        {% for gruppe in site.data[year]arbeidsgrupper %}
+
+        <div class="list-wrapper">
         
+        {% for gruppe in site.data[year]arbeidsgrupper %}
+        <dl>
             {% assign key = gruppe[0] %}
             <dt>{{ site.data.dictionary[key] }}</dt>
             {% for person in gruppe[1] %}
-                <dd>{% if person.gruppeleder %}Gruppeleder: {% endif %}{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
+                <dd{% if person.gruppeleder %} class="gruppeleder"{% endif %}>{{ person.name }}{% if person.trinn %} ({{ person.trinn }}. trinn){% endif %}</dd>
             {% endfor %}
        
             
-    
+        </dl>
         {% endfor %}  
-         </dl>
+         
+        </div>
+        <p>
+            <small><em>Gruppeledere i kursiv</em></small>
+        </p>
     </section>
     
     </div>
