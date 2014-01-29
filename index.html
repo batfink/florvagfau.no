@@ -35,13 +35,14 @@
                 
             {% endfor %}
             
-            <ul>
+            <ul class="recipiesButtons single">
 <!--                 <li>
                     <a href="{{ post.url }}">Les referatet</a>
                 </li> -->
                 <li>
-                    <a class="button" href="/referat/">Referat-arkiv</a>
+                    <a class="button single" href="/referat/">Referat-arkiv</a>
                 </li>
+                
             </ul>
         </div>
 
@@ -88,9 +89,9 @@
                 
             </div>
             
-            <ul>
+            <ul class="recipiesButtons single">
                 <li>
-                    <a class="button" href="/medlemmer/{{ year | append: '-' | append: nextyear }}/">Alle medlemmene</a>
+                    <a class="button single" href="/medlemmer/{{ year | append: '-' | append: nextyear }}/">Alle medlemmene</a>
                 </li>
 <!--                 <li>
                     <a href="/medlemmer/">Medlemmer tidligere år</a>
