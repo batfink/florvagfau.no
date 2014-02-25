@@ -1,10 +1,14 @@
 {% include header.html %}
 
 <div class="content">
+
+    <!-- <a href="/arrangement/" class="button back">Arrangement</a> -->
+
     <h1>{{ page.title }}</h1>
     
+    <label for="select">Snarvei:</label>
     {% if page.categories[0] == 'arrangement' %}
-        <select>
+        <select id="select">
             {% for post in site.categories.arrangement %}
             <option value="{{ post.url }}"{% if post.url == page.url%} selected="selected"{% endif %}>{{ post.title }}</option>
             {% endfor %}

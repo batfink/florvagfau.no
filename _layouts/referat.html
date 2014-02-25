@@ -2,9 +2,11 @@
 
 <div class="content">
     
-
-    <h1>Møtereferat</h1>
-    <select>
+   <!--  <a href="/referat/" class="button back">Referat</a> -->
+    
+    <h1>Referat {{ page.title }}</h1>
+    <label for="select">Snarvei:</label>
+    <select id="select">
 
         {% for post in site.categories.referat %}
     

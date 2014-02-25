@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 html {
   font-size: 18px;
   line-height: 1.5em;
@@ -179,14 +184,17 @@ select {
   .buttons {
     display: none;
   }
-  .recipiesButtons,
-  .list-wrapper {
+  .columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
+  }
+  .button.single {
+    width: -webkit-calc((100% - 40px)/3);
+    width: calc((100% - 40px)/3);
   }
   #nav {
     display: block;
@@ -214,13 +222,16 @@ select {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .recipiesButtons,
-  .list-wrapper {
+  .columns {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
     -webkit-column-count: 2;
     -webkit-column-gap: 20px;
     column-count: 2;
     column-gap: 20px;
+  }
+  .button.single {
+    width: -webkit-calc((100% - 20px)/2);
+    width: calc((100% - 20px)/2);
   }
 }

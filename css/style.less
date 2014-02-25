@@ -1,3 +1,7 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 18px;
     line-height: 1.5em;
@@ -221,7 +225,7 @@ select {
 
 @media only screen and (min-width: 1024px) {
     .buttons { display: none; }
-    .recipiesButtons, .list-wrapper {
+    .columns {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
@@ -229,14 +233,10 @@ select {
         -moz-column-gap: 20px;        
         column-gap: 20px;
     }
-    .recipiesButtons.single li:first-child {
-        margin-bottom: 100px;
+    .button.single {
+        width: e('-webkit-calc((100% - 40px)/3)');
+        width: e('calc((100% - 40px)/3)');
     }
-    // .button.single {
-    //     // margin-right: 667px;
-    //     margin-bottom: 30px;
-    //     -webkit-column-break-after: always;
-    // }
     #nav {
         display: block;
     }
@@ -265,10 +265,7 @@ select {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .recipiesButtons.single li:first-child {
-        margin-bottom: 100px;
-    }
-    .recipiesButtons, .list-wrapper {
+    .columns {
         -moz-column-count: 2;
        -moz-column-gap: 20px;
        -webkit-column-count: 2;
@@ -276,9 +273,10 @@ select {
         column-count: 2;
         column-gap: 20px;
     }
-    // .button.single {
-    //     margin-right: 52%;
-    // }
+    .button.single {
+        width: e('-webkit-calc((100% - 20px)/2)');
+        width: e('calc((100% - 20px)/2)');
+    }
 }
 
 
