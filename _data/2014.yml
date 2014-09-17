@@ -1,0 +1,150 @@
+person:
+    marthina: &marthina
+        name: Marthina Sophie Linton
+        phone: 400 49 471
+        trinn: 1
+    renate: &renate
+        name: Renate J Johannessen
+        phone: 977 45 801
+        trinn: 1
+    irene: &irene
+        name: Irene Krydsby
+        phone: 415 21 573
+        trinn: 2
+    lindab: &lindab
+        name: Linda Bergsvik
+        trinn: 2
+    elsebeth: &elsebeth
+        name: Elsebeth Nyten Bergh
+        trinn: 2
+    silje: &silje
+        name: Silje Espeland Sivertsen
+        trinn: 2
+    ashild: &ashild
+        name: Åshild P Kråvik
+        phone: 408 40 458
+        trinn: 3
+    marianne: &marianne
+        name: Marianne Brudvik
+        trinn: 3
+    therese: &therese
+        name: Therese J Johannessen
+        trinn: 3
+    steffen: &steffen
+        name: Steffen Engelsen
+        trinn: 4
+    tonny: &tonny
+        name: Tonny Thers
+        phone: 915 61 838
+        trinn: 5
+    trine: &trine
+        name: Trine Mjøen
+        trinn: 5
+    lindas: &lindas
+        name: Linda Sunde
+        trinn: 6
+    merete: &merete
+        name: Merete Sjåstad
+        trinn: 6
+    johnny: &johnny
+        name: Johnny Li
+        trinn: 7
+    lindaj: &lindaj
+        name: Linda N. Juvik
+        trinn: 7
+    vibeke: &vibeke
+        name: Vibeke Birkeland
+        trinn: 7
+
+
+trinn:
+    1: &1
+        - *marthina
+        - *renate
+    2: &2
+        - *irene
+        - *lindab
+        - *elsebeth
+        - *silje
+    3: &3
+        - *ashild
+        - *marianne
+        - *therese
+    4: &4
+        - *steffen
+    5: &5
+        - *tonny
+        - *trine
+    6: &6
+        - *lindas
+        - *merete
+    7: &7
+        - *johnny
+        - *lindaj
+        - *vibeke
+
+
+verv:
+    leder: 
+        - *tonny
+    nestleder: 
+        - *renate
+    referent: 
+        - name: Rullerer
+    system: 
+        - name: –
+    kasserer: 
+        - *therese
+    kfu: 
+        - name: Rullerer
+
+
+
+arbeidsgrupper:
+    hjelpegruppen:
+        - name: Ingen hjelpegruppe dette skoleåret 
+          url: /referat/2013/oktober/#hjelpegruppe
+    trafikk:
+        - *irene
+        - *lindab
+        - *elsebeth
+        - *silje
+        - *ashild
+        - *marianne
+        - *therese
+    tvaksjonen:
+        - 
+            << : *irene
+            gruppeleder: true
+        - *lindab
+        - *elsebeth
+        - *silje
+    17mai:
+        - *steffen
+        - *tonny
+    julefest:
+        -
+            << : *marthina
+            gruppeleder: true
+        - *johnny
+        - *lindaj
+        - *vibeke
+    elevkveld:
+        - 
+            << : *ashild
+            gruppeleder: true
+        - *marianne
+        - *therese
+        - *trine
+        - *lindas
+        - *merete
+    dugnad:
+        -
+            << : *marthina
+            gruppeleder: true
+        - *irene
+        - *lindab
+        - *elsebeth
+        - *silje
+
+
