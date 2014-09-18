@@ -5,40 +5,48 @@
     <meta name="viewport" content="width = device-width, user-scalable=yes, initial-scale = 1.0, minimum-scale = 1.0"/>
     <title>{% if page.title %}{{ page.title | append: ' - ' }}{% endif %}Florvåg Skole FAU</title>
     <!-- <link rel="stylesheet" href="/css/style.css"> -->
+
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Bitter:400,700,400italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet/less" href="/css/style.less">
     <script src="/js/less-1.6.3.min.js"></script>
+
+    <link rel="stylesheet" href="/css/overrides.css">
+
 </head>
 <body>
-    
+
 <div id="wrapper">
     <header>
         <div class="content">
-            <h1 class="logo"><a href="/">Florvag Skole FAU</a></h1>    
-            
-            
-            
+            <h1 class="logo"><a href="/">Florvag Skole FAU</a></h1>
+
+
+
             {% if include.backbtn %}
-                <!-- <a class="backbtn" href="/{% unless include.backbtn == 'referat'%}{{ include.backbtn }}/{% endunless %}">{{ include.backbtn }}</a>   -->  
+                <!-- <a class="backbtn" href="/{% unless include.backbtn == 'referat'%}{{ include.backbtn }}/{% endunless %}">{{ include.backbtn }}</a>   -->
             {% endif %}
-            
+
             <!--         <a class="button show" href="#showmenu">Meny</a>
             <a class="button hide" href="#">Lukk</a>
              -->
             <div class="buttons">
                 <a href="#meny">Meny</a>
-                <a href="#">Skjul meny</a>                
+                <a href="#">Skjul meny</a>
             </div>
         </div>
 
     </header>
 
-    
+
 
     <nav id="nav">
         <ul class="content">
             <li><a href="/">Hjem</a></li>
             <!-- <li><a href="{% for post in site.categories.referat | limit: 1 %}{{ post.url }}{% endfor %}">Referat</a></li>   -->
-             <li><a href="/referat/">Referat</a></li>           
+             <li><a href="/referat/">Referat</a></li>
             <li><a href="{% for post in site.categories.medlemmer | limit: 1 %}{{ post.url }}{% endfor %}">Medlemmer</a></li>
             <li><a href="/arrangement/">Arrangement</a></li>
             <li><a href="/arbeidsgrupper/">Arbeidsgrupper</a></li>
@@ -46,8 +54,6 @@
             <li><a href="/vedtekter/">Vedtekter</a></li>
         </ul>
     </nav>
-    
+
 
     <div id="content">
-        
-

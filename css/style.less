@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-family: 'Helvetica Neue', Roboto, sans-serif;    
+    font-family: 'Helvetica Neue', Roboto, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -39,24 +39,24 @@ ul {
 }
 
 a.button {
-    display: block;    
+    display: block;
     text-decoration: none;
     background: gray;
     padding: .5rem 1rem;
     color: white;
     border-radius: 3px;
     margin-bottom: .5rem;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
-section {    
+section {
     &:nth-child(odd) {
         background: #ddd;
     }
 }
 
 footer {
-    
+
 }
 
 h1, h2, h3 { font-weight: normal; }
@@ -69,7 +69,7 @@ dl.tags {
     clear: both;
     overflow: hidden;
     dt {
-        float: left;        
+        float: left;
         &:after {
             content: ':\2002'
         }
@@ -90,14 +90,14 @@ dl.tags {
 dl:not(.tags) {
     margin-top: 0;
     -webkit-column-break-inside: avoid;
-    column-break-inside: avoid;    
+    column-break-inside: avoid;
     dt {
         font-weight: bold;
     }
     dd {
         margin-left: 0;
         & + dt {
-            margin-top: 1em;    
+            margin-top: 1em;
         }
     }
 }
@@ -130,13 +130,13 @@ dl:not(.tags) {
     right: 20px;
     top: 20px;
 
-    a {            
+    a {
         color: white;
         width: 2em;
-        height: 2em;        
+        height: 2em;
         background-image: -webkit-repeating-linear-gradient(white, white 20%, transparent 20%, transparent 40%);
         background-image: repeating-linear-gradient(white, white 20%, transparent 20%, transparent 40%);
-        text-indent: -1000px;        
+        text-indent: -9000px;        
 
         &:first-child {
             display: block;
@@ -154,7 +154,7 @@ dl:not(.tags) {
         #nav {
             display: block;
         }
-        .buttons a {  
+        .buttons a {
             &:first-child {
                 display: none;
             }
@@ -230,7 +230,7 @@ select {
         -moz-column-count: 3;
         column-count: 3;
         -webkit-column-gap: 20px;
-        -moz-column-gap: 20px;        
+        -moz-column-gap: 20px;
         column-gap: 20px;
     }
     .button.single {
@@ -242,14 +242,14 @@ select {
     }
     .content {
         max-width: 980px;
-        margin: 0 auto !important;        
+        margin: 0 auto !important;
     }
     #nav {
         background: silver;
         clear: both;
         overflow: hidden;
         ul {
-            list-style-type: none;            
+            list-style-type: none;
             padding: 0;
         }
         li {
@@ -261,7 +261,7 @@ select {
             }
         }
     }
-        
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -278,6 +278,3 @@ select {
         width: e('calc((100% - 20px)/2)');
     }
 }
-
-
-
