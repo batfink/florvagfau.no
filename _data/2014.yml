@@ -1,35 +1,102 @@
 person:
     krisol: &krisol
         name: Kristin Solheim
-        phone: 400 49 471
+        phone: 916 45 004
+        email: kikki.solheim@gmail.com
         trinn: 1
+    annloh: &annloh
+        name: Anne Marte Lohne
+        phone: 416 31 749
+        email: am_lohne@hotmail.com
+        trinn: 1
+    benbli: &benbli
+        name: Bente Blindheim Liabø
+        phone: 959 40 043
+        email: benteblindheimliabo@hotmail.com
+        trinn: 2
     renjor: &renjor
         name: Renate Jørstad
         phone: 977 45 801
+        email: renate83@hotmail.com
         trinn: 2
     truver: &truver
         name: Trude B. Vereide
+        phone: 908 30 003
+        email: tvereide@hotmail.com
         trinn: 3
     monesp: &monesp
         name: Monica A. Espeland
+        phone: 951 11 317
+        trinn: 3
+    synsta: &synsta
+        name: Synnøve Standal
+        phone: 482 27 019
+        email: synst@operamail.com
+        trinn: 3
+    stesek: &stesek
+        name: Steinar Sekkingstad
+        phone: 938 39 623
+        email: steinar@kunsthall.no
         trinn: 3
     triabb: &triabb
         name: Trine Abbedissen
+        phone: 936 37 627
+        email: trineabbedissen@hotmail.com
         trinn: 4
     elimon: &elimon
         name: Elisabeth Monsen
+        phone: 959 13 504
+        email: elisabethmonsen@hotmail.com
         trinn: 4
     marhan: &marhan
         name: Marianne Hansen
+        phone: 993 22 776
+        email: mirabello@gmail.com
+        trinn: 5
+    andsev: &andsev
+        name: Andre Sævik
+        phone: 950 94 536
+        email: andre.saevik@bob.no
         trinn: 5
     hegomm: &hegomm
         name: Hege Ommedal
         phone: 975 00 216
+        email: hegomm@hfk.no
         trinn: 6
     karsol: &karsol
         name: Karin Sølvberg
+        phone: 974 88 198
+        email: k.solvberg@gmail.com
         trinn: 6
+    anjban: &anjban
+        name: Anja Bang
+        phone: 405 47 615
+        email: anja@bangcph.com
+        trinn: 7
+    evydah: &evydah
+        name: Evy Lekva Dahl
+        phone: 45474078
+        email: evy.dahl@live.no
+        trinn: 7
 
+
+klassekontakter:
+    - *krisol
+    - *annloh
+    - *benbli
+    - *renjor
+    - *truver
+    - *monesp
+    - *synsta
+    - *stesek
+    - *triabb
+    - *elimon
+    - *marhan
+    - *andsev
+    - *hegomm
+    - *karsol
+    - *anjban
+    - *evydah
 
 verv:
     leder:
@@ -43,41 +110,51 @@ verv:
     kasserer:
         - *monesp
     kfu:
-        - name: Rullerer
+        - *krisol
 
 
 
 arbeidsgrupper:
     trafikk:
-        - name: Gruppeleder ikke valgt ennå
-          gruppeleder: true
+        -
+            << : *stesek
+            gruppeleder: true
         - *renjor
+        - *benbli
         - *truver
         - *monesp
+        - *synsta
     tvaksjonen:
         -
             << : *renjor
             gruppeleder: true
+        - *benbli
     17mai:
-        - name: Gruppeleder ikke valgt ennå
-          gruppeleder: true
-        - *triabb
+        -
+            << : *andsev
+            gruppeleder: true
         - *elimon
         - *marhan
+        - *triabb
     julefest:
-        - name: Gruppeleder ikke valgt ennå
-          gruppeleder: true
+        -
+            << : *annloh
+            gruppeleder: true
         - *krisol
-        - *marhan
+        - *anjban
+        - name: Tom Ahmt
+          trinn: 7
     elevkveld:
-        - name: Gruppeleder ikke valgt ennå
-          gruppeleder: true
-        - *truver
-        - *monesp
+        -
+            << : *monesp
+            gruppeleder: true
+        - *truver        
         - *hegomm
         - *karsol
     dugnad:
-        - name: Gruppeleder ikke valgt ennå
-          gruppeleder: true
-        - *krisol
-        - *renjor
+        -
+            << : *anjban
+            gruppeleder: true
+        - *hegomm
+        - *karsol
+        - *evydah
