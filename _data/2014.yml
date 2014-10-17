@@ -27,6 +27,7 @@ person:
     monesp: &monesp
         name: Monica A. Espeland
         phone: 951 11 317
+        email: mica77@online.no
         trinn: 3
     synsta: &synsta
         name: Synnøve Standal
@@ -148,7 +149,7 @@ arbeidsgrupper:
         -
             << : *monesp
             gruppeleder: true
-        - *truver        
+        - *truver
         - *hegomm
         - *karsol
     dugnad:
