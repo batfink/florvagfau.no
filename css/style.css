@@ -104,7 +104,7 @@ dl:not(.tags) dd + dt {
   height: 2em;
   background-image: -webkit-repeating-linear-gradient(#ffffff, #ffffff 20%, transparent 20%, transparent 40%);
   background-image: repeating-linear-gradient(#ffffff, #ffffff 20%, transparent 20%, transparent 40%);
-  text-indent: -1000px;
+  text-indent: -9000px;
 }
 .buttons a:first-child {
   display: block;
@@ -139,16 +139,12 @@ dl:not(.tags) dd + dt {
 #nav a {
   text-decoration: none;
   /*background: white;*/
-
   color: black;
   display: block;
   /*padding: .5rem 1rem;*/
-
   padding: .5rem 0;
   /*font-size: 1.2rem;*/
-
   /*margin-top: .5rem;*/
-
 }
 #nav .content {
   padding: 0 20px;
@@ -162,14 +158,12 @@ dl:not(.tags) dd + dt {
 }
 #markdown-toc li > ul {
   /*margin-left: 1rem;*/
-
   text-transform: none;
 }
 #markdown-toc li > ul ul {
   margin-left: 1rem;
   font-size: .8rem;
   /*margin-bottom: .5rem;*/
-
 }
 #markdown-toc li > ul ul ul {
   margin-left: 1rem;
