@@ -51,7 +51,12 @@ person:
         name: Barbro Eikemo
         phone: 986 65 704
         email: sol1@online.no
-        trinn: 5
+        trinn: 5        
+    emmeri: &emmeri
+        name: Emma Eriksen
+        phone: 908 54 447
+        email: emma.nina.eriksen@gmail.com
+        trinn: 7
 
 
 
@@ -77,7 +82,8 @@ verv:
     referent:
         - name: Rullerer
     system:
-        - name: –
+        - *ulfjoh
+        - *benbli
     kasserer:
         - *ulfjoh
     kfu:
@@ -97,10 +103,14 @@ arbeidsgrupper:
             gruppeleder: true
         - *marpet
     17mai:
-        - ikke valgt ennå
+        - *synsta
+        - *baring
+        - *svedah
+        - *bareik
     julefest:
-        - ikke valgt ennå
+        - *stilin
+        - *emmeri
     elevkveld:
-        - ikke valgt ennå
+        - *benbli
     dugnad:
         - ikke valgt ennå
