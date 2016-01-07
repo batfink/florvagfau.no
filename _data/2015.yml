@@ -113,4 +113,4 @@ arbeidsgrupper:
     elevkveld:
         - *benbli
     dugnad:
-        - ikke valgt ennå
+        - *emmeri
