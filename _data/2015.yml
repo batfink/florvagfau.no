@@ -52,12 +52,21 @@ person:
         phone: 986 65 704
         email: sol1@online.no
         trinn: 5        
+    monhan: &monhan
+        name: Monica Hanselmann
+        trinn: 6
+        phone: 480 91 773
+        email: mohansel@online.no 
     emmeri: &emmeri
         name: Emma Eriksen
         phone: 908 54 447
         email: emma.nina.eriksen@gmail.com
         trinn: 7
-
+    hegomm: &hegomm
+        name: Hege Ommedal
+        phone: 975 00 216
+        email: hegomm@hfk.no
+        trinn: 7
 
 
 klassekontakter:
@@ -112,5 +121,8 @@ arbeidsgrupper:
         - *emmeri
     elevkveld:
         - *benbli
+        - *monhan
     dugnad:
         - *emmeri
+        - *hegomm
+        - *monhan
