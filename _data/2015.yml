@@ -42,6 +42,11 @@ person:
         phone: 414 03 311
         email: kokko66@hotmail.com
         trinn: 4
+    syntor: &syntor
+        name: Synnøve Standal Torgilstveit
+        phone: 482 27 091
+        email: synst@operamail.com
+        trinn: 4
     siwjak: &siwjak
         name: Siw Waagen Jakobsen
         phone: 977 04 347
@@ -51,12 +56,12 @@ person:
         name: Barbro Eikemo
         phone: 986 65 704
         email: sol1@online.no
-        trinn: 5        
+        trinn: 5
     monhan: &monhan
         name: Monica Hanselmann
         trinn: 6
         phone: 480 91 773
-        email: mohansel@online.no 
+        email: mohansel@online.no
     emmeri: &emmeri
         name: Emma Eriksen
         phone: 908 54 447
