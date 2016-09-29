@@ -1,0 +1,133 @@
+person:
+    marpet: &marpet
+        name: Mariann Petersen
+        trinn: 1
+    stilin: &stilin
+        name: Stina Lindelid
+        phone: 984 86 184
+        email: stina_lindelid@hotmail.com
+        trinn: 1
+    yvohov: &yvohov
+        name: Yvonne Hovland
+        phone: 943 09 987
+        email: yvonne.hovland@scandichotels.com
+        trinn: 1
+    krisol: &krisol
+        name: Kristin Solheim
+        phone: 916 45 004
+        email: kikki.solheim@gmail.com
+        trinn: 2
+    ulfjoh: &ulfjoh
+        name: Ulf Johnsen
+        phone: 988 40 660
+        email: ulf.eirik.johnsen@gmail.com
+        trinn: 2
+    benbli: &benbli
+        name: Bente Blindheim Liabø
+        phone: 959 40 043
+        email: benteblindheimliabo@hotmail.com
+        trinn: 3
+    synsta: &synsta
+        name: Synnøve Standal
+        phone: 482 27 019
+        email: synst@operamail.com
+        trinn: 4
+    baring: &baring
+        name: Bård-Inge Heggholmen
+        phone: 932 69 833
+        email: heggholmen@gmail.com
+        trinn: 4
+    svedah: &svedah
+        name: Svenn-Egil Dahl
+        phone: 414 03 311
+        email: kokko66@hotmail.com
+        trinn: 4
+    syntor: &syntor
+        name: Synnøve Standal Torgilstveit
+        phone: 482 27 091
+        email: synst@operamail.com
+        trinn: 4
+    siwjak: &siwjak
+        name: Siw Waagen Jakobsen
+        phone: 977 04 347
+        email: siw.jakobsen@bkkfiber.no
+        trinn: 5
+    bareik: &bareik
+        name: Barbro Eikemo
+        phone: 986 65 704
+        email: sol1@online.no
+        trinn: 5
+    monhan: &monhan
+        name: Monica Hanselmann
+        trinn: 6
+        phone: 480 91 773
+        email: mohansel@online.no
+    emmeri: &emmeri
+        name: Emma Eriksen
+        phone: 908 54 447
+        email: emma.nina.eriksen@gmail.com
+        trinn: 7
+    hegomm: &hegomm
+        name: Hege Ommedal
+        phone: 975 00 216
+        email: hegomm@hfk.no
+        trinn: 7
+
+
+klassekontakter:
+    - *stilin
+    - *yvohov
+    - *krisol
+    - *stilin
+    - *benbli
+    - *synsta
+    - *baring
+    - *svedah
+    - *siwjak
+    - *bareik
+
+
+
+verv:
+    leder:
+        - *krisol
+    nestleder:
+        - *benbli
+    referent:
+        - name: Rullerer
+    system:
+        - *ulfjoh
+        - *benbli
+    kasserer:
+        - *ulfjoh
+    kfu:
+        - *yvohov
+
+
+
+arbeidsgrupper:
+    trafikk:
+        -
+            << : *siwjak
+            gruppeleder: true
+        - *marpet
+    tvaksjonen:
+        -
+            << : *ulfjoh
+            gruppeleder: true
+        - *marpet
+    17mai:
+        - *synsta
+        - *baring
+        - *svedah
+        - *bareik
+    julefest:
+        - *stilin
+        - *emmeri
+    elevkveld:
+        - *benbli
+        - *monhan
+    dugnad:
+        - *emmeri
+        - *hegomm
+        - *monhan
