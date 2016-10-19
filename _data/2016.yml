@@ -1,90 +1,108 @@
 person:
-    marpet: &marpet
-        name: Mariann Petersen
-        trinn: 1
-    stilin: &stilin
-        name: Stina Lindelid
-        phone: 984 86 184
-        email: stina_lindelid@hotmail.com
-        trinn: 1
+    themar: &themar
+        trinn: '1'
+        name: Theresa Marie Famiglietti
+        email: theresa_famiglietti@hotmail.com
+        phone: 46 62 64 07
+    morchr: &morchr
+        trinn: '1'
+        name: Morten Christian Bernson
+        email: morten-christian@bernson.net
+        phone: 90 99 50 02
     yvohov: &yvohov
+        trinn: '2'
         name: Yvonne Hovland
-        phone: 943 09 987
         email: yvonne.hovland@scandichotels.com
-        trinn: 1
-    krisol: &krisol
-        name: Kristin Solheim
-        phone: 916 45 004
-        email: kikki.solheim@gmail.com
-        trinn: 2
+        phone: 94 30 99 87
+    inghal: &inghal
+        trinn: '2'
+        name: Ingvild Halland Ørnsrud
+        email: ihornsrud@hotmail.com
+        phone: 99 03 17 37
     ulfjoh: &ulfjoh
+        trinn: '3'
         name: Ulf Johnsen
-        phone: 988 40 660
         email: ulf.eirik.johnsen@gmail.com
-        trinn: 2
+        phone: 98 84 06 60
+    marpet: &marpet
+        trinn: '3'
+        name: Marianne Petersen
+        email: marianne.petersen@imr.no
+        phone: 98 87 18 43
+    krisol: &krisol
+        trinn: '3'
+        name: Kristin Solheim
+        email: kikki.solheim@gmail.com
+        phone: 91 64 50 04
     benbli: &benbli
-        name: Bente Blindheim Liabø
-        phone: 959 40 043
+        trinn: '4'
+        name: Bente Blindheim
         email: benteblindheimliabo@hotmail.com
-        trinn: 3
-    synsta: &synsta
-        name: Synnøve Standal
-        phone: 482 27 019
-        email: synst@operamail.com
-        trinn: 4
+        phone: 95 94 00 43
+    triabb: &triabb
+        trinn: '4'
+        name: Trine Abbedissen
+        email: trineabbedissen@hotmail.com
+        phone: 93 63 76 27
     baring: &baring
+        trinn: '5'
         name: Bård-Inge Heggholmen
-        phone: 932 69 833
         email: heggholmen@gmail.com
-        trinn: 4
-    svedah: &svedah
-        name: Svenn-Egil Dahl
-        phone: 414 03 311
+        phone: 93 26 98 33
+    sveegi: &sveegi
+        trinn: '5'
+        name: Svenn- Egil Dahl
         email: kokko66@hotmail.com
-        trinn: 4
-    syntor: &syntor
-        name: Synnøve Standal Torgilstveit
-        phone: 482 27 091
-        email: synst@operamail.com
-        trinn: 4
-    siwjak: &siwjak
-        name: Siw Waagen Jakobsen
-        phone: 977 04 347
-        email: siw.jakobsen@bkkfiber.no
-        trinn: 5
-    bareik: &bareik
-        name: Barbro Eikemo
-        phone: 986 65 704
-        email: sol1@online.no
-        trinn: 5
-    monhan: &monhan
-        name: Monica Hanselmann
-        trinn: 6
-        phone: 480 91 773
-        email: mohansel@online.no
-    emmeri: &emmeri
-        name: Emma Eriksen
-        phone: 908 54 447
-        email: emma.nina.eriksen@gmail.com
-        trinn: 7
+        phone: 41 40 33 11
     hegomm: &hegomm
+        trinn: '6'
         name: Hege Ommedal
-        phone: 975 00 216
         email: hegomm@hfk.no
-        trinn: 7
-
+        phone: 97 50 02 16
+    hilgan: &hilgan
+        trinn: '6'
+        name: Hildegunn Gangsøy
+        email: hildegunn.gangsoy@gmail.com
+        phone: 99 56 05 62
+    marhau: &marhau
+        trinn: '6'
+        name: Mariann Hauge
+        email: mariann.hauge@live.no
+        phone: 92 02 35 84
+    hakmoo: &hakmoo
+        trinn: '7'
+        name: Håkon Mo
+        email: urheim74@gmail.com
+        phone: 99 24 45 43
+    kjeloh: &kjeloh
+        trinn: '7'
+        name: Kjetil Lohne
+        email: kjetillohne@hotmail.com
+        phone: 97 70 65 77
+    stiviv: &stiviv
+        trinn: z
+        name: Stig Vivelid Nilssen
+        email: vivelid@online.no
+        phone: 93 03 09 55
 
 klassekontakter:
-    - *stilin
+    - *themar
+    - *morchr
     - *yvohov
+    - *inghal
+    - *ulfjoh
+    - *marpet
     - *krisol
-    - *stilin
     - *benbli
-    - *synsta
+    - *triabb
     - *baring
-    - *svedah
-    - *siwjak
-    - *bareik
+    - *sveegi
+    - *hegomm
+    - *hilgan
+    - *marhau
+    - *hakmoo
+    - *kjeloh
+    - *stiviv
 
 
 
@@ -108,26 +126,22 @@ verv:
 arbeidsgrupper:
     trafikk:
         -
-            << : *siwjak
-            gruppeleder: true
-        - *marpet
-    tvaksjonen:
-        -
             << : *ulfjoh
             gruppeleder: true
-        - *marpet
+    tvaksjonen:
+        -
+            << : *yvohol
+            gruppeleder: true
     17mai:
-        - *synsta
-        - *baring
-        - *svedah
-        - *bareik
-    julefest:
-        - *stilin
-        - *emmeri
-    elevkveld:
         - *benbli
-        - *monhan
+        - *triabb
+        - *baring
+        - *sveegi
+    julefest:
+        - *stiviv
+        - *morchr
+    elevkveld:
+        - *marhaug
+        - *marpet
     dugnad:
-        - *emmeri
         - *hegomm
-        - *monhan
