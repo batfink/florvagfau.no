@@ -130,7 +130,7 @@ arbeidsgrupper:
             gruppeleder: true
     tvaksjonen:
         -
-            << : *yvohol
+            << : *yvohov
             gruppeleder: true
     17mai:
         - *benbli
@@ -141,7 +141,7 @@ arbeidsgrupper:
         - *stiviv
         - *morchr
     elevkveld:
-        - *marhaug
+        - *marhau
         - *marpet
     dugnad:
         - *hegomm
