@@ -90,8 +90,9 @@ Dugnad
 ### Elevkvelder:
 
 Følgende datoer blir det Elevkvelder:
+
 - 01\.november
-- 05.\ desember
+- 05\. desember
 - 08\.februar
 - 30\.mars
 
